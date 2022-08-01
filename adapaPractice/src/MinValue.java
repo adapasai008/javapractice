@@ -27,4 +27,3 @@ public class MinValue {
 	}
 
 }
-//git added line 
