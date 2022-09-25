@@ -61,6 +61,29 @@ public class StreamAPIfilterDemo {
 				.map(p -> p.name +" = " + p.salary)
 				.collect(Collectors.toList());
 		productsName2.forEach(i -> System.out.println(i));
+		
+		/*
+		 Stream provides two different operations
+		 
+		 Intermediate operations:
+		 1. map :(The map method used to return the stream consisting of the results of applying the 
+		          given functions to the elements of the stream.)
+		          
+		 2. filter :(The filter method is used to select the elements as per the predicate passed as
+		            argument.)
+		            
+		 3. sorted :(The sorted method is used to sort the stream.)
+		 
+		 Terminal operations:
+		 1. collect :(The collect method is used to return the result of the intermediate operations
+		              performed on the stream.)
+		              
+		 2. forEach :(The forEach method is used to iterate through every element on the stream.)
+		 
+		 3. reduce :(The reduce method is used to reduce the elements of a stream to a single value.
+		             The reduce method takes the BinaryOperator as a parameter.)
+		 
+		 */
 
 	}
 

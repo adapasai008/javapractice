@@ -5,7 +5,7 @@ import java.util.Set;
 
 //HashMap contains values based on keys
 //HashMap contains only unique keys
-//HashMap may one one null key multiple null values
+//HashMap may allow one null key multiple null values
 //HashMap may is non synchronized 
 //HashMap maintains no order
 public class HashMapDemo {

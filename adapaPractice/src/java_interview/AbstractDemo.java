@@ -5,9 +5,11 @@ package java_interview;
 //It cannot be instantiated.
 //It can have constructors and static methods also.
 //It can have final methods which will force the subclass not to change the body of the method.
-abstract class Bike{
+//Abstract class is used to provide common method implementation to all the subclasses or to provide default implementation.
+//Abstraction is the process of hiding the implementation details and showing only functionality to the user.
+abstract class BikeNew{
 	
-	Bike(){
+	BikeNew(){
 		
 		System.out.println("Bike is created");
 	}
@@ -19,7 +21,7 @@ abstract class Bike{
 	}
 	
 }
-class Honda extends Bike{
+class Honda extends BikeNew{
 	
 	void run(){
 		
@@ -34,7 +36,7 @@ public class AbstractDemo {
 
 	public static void main(String[] args) {
 		
-		Bike b = new Honda();//Here we can't initiate the Abstract class.
+		BikeNew b = new Honda();//Here we can't initiate the Abstract class.
 		b.run();
 		b.changeGear();
 

@@ -8,6 +8,8 @@ class Desgine{
 	
 	private Desgine() {
 		
+		System.out.println("Instance created.....");
+		
 	}
 	public static Desgine getInstance() {
 		
@@ -19,9 +21,9 @@ class Desgine{
 public class SingletonEarlyDemo {
 
 	public static void main(String[] args) {
-	
 
-		Desgine desgine = Desgine.getInstance();
+		Desgine.getInstance();
 	}
+	
 
 }
