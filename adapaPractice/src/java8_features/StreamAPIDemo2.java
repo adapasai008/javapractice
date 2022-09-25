@@ -21,6 +21,7 @@ public class StreamAPIDemo2 {
 		System.out.println("Lesser than 10");
 		
 		List<Integer> num2 = num.stream().filter(n->(n<10)).toList();
+		
 		num2.forEach(i->System.out.println(i));
 
 		System.out.println("All values.........");

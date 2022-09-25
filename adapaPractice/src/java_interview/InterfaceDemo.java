@@ -16,7 +16,7 @@ interface Drawable{
 }
 interface Startrted{
 	
-	void start();	
+	void start();
 }
 class Circle implements Startrted,Drawable{
 	

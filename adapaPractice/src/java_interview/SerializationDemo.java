@@ -7,8 +7,9 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-//A variable that is initialized by it's default value during the de-serialization is know as the transient 
-//variable.
+/*A variable that is initialized by it's default value during the de-serialization is know as the transient 
+variable.
+*/
 class Save1 implements Serializable{
 	
 	int i;
