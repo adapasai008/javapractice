@@ -2,6 +2,12 @@ package java_interview;
 
 public class ExceptionDemo {
 
+	/*
+	 * what is Exception in Java? 
+	 * In Java , an exception is an event that disrupts the normal flow of the program.
+	 * It's an object which is thrown at runtime.
+	 */	
+	
 //	1) Checked Exception
 //	The classes that directly inherit the Throwable class except RuntimeException and Error are known as checked exceptions.
 //	For example, IOException, SQLException, etc. Checked exceptions are checked at compile-time.
@@ -15,8 +21,14 @@ public class ExceptionDemo {
 //	Error is irrecoverable. Some example of errors are OutOfMemoryError, 
 //	VirtualMachineError, AssertionError etc.
 //	
+	
+	/*     Unreachable catch block exception 
+	 * This error occurs when you keep super class first and sub class later.
+	 * */
+	
+	
 	public static void main(String[] args){
-
+		
 		int i,j,k = 0;
 		i = 16;
 		j = 4;

@@ -1,6 +1,6 @@
 package java_interview;
 
-import java.util.HashMap;
+import java.util.HashMap;	
 
 public class HashMapInternalWorking {
 
@@ -9,6 +9,7 @@ public class HashMapInternalWorking {
 		//map is a collections of key, value pairs.
 		HashMap<String, Integer> map = new HashMap<String, Integer>();
 		map.put("Adapa", 28);
+		
 		
 		System.out.println(map.get("Adapa"));
 		
