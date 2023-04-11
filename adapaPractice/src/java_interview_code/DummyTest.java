@@ -4,14 +4,17 @@ public class DummyTest {
 
 	public static void main(String[] args) {
 
-		int j = 10;
+		//add the first element and last element in the given array.
 		
-		for(int i=0;i<=j;i++) {
-			if(i%2!=0) {
-				System.out.print(i+",");
-			}
-		}
-
+		int[] arr = {2,4,3,5,3,18};
+		
+		int first = arr[0];
+		int last = arr[arr.length-1];
+		
+		int sum = first+last;
+		
+		System.out.println(sum);
+		
 	}
 
 }

@@ -1,7 +1,15 @@
 package geeksForGeeksCode;
 
 import java.util.Scanner;
-
+/*
+Input:
+N = 5 (it's the array size)
+arr[] = {1 2 3 4 5} 
+K = 4
+Output: 3
+Explanation: 4 appears at index 3.
+*/
+//It will print the index value of the given element
 class Solution {
 	int binarysearch(int arr[], int n, int key) {
 
