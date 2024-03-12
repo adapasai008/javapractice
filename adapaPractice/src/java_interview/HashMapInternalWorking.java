@@ -17,7 +17,7 @@ public class HashMapInternalWorking {
 		 Map internal working:
 		 
 		 1.At first it will create the 16 buckets where index starts from 0 and ends with 15.
-		   After 12 buckets will increase it's buckets size if the buckets are filled.
+		   After 12 buckets it will increase it's buckets size if the buckets are filled.
 		 
 		 2.Array of node is called the bucket. Each node has the data structure like LinkedList.
 		   More than one node can share the same bucket. it may be different in capacity.
