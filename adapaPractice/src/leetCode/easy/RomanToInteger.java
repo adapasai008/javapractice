@@ -5,38 +5,40 @@ import java.util.Map;
 
 public class RomanToInteger {
 
-	public static void main(String[] args) {
+
+	public static int romanToInt(String str) {
 		
-		//should convert Roman values into numbers.
-		//Here it should print 19.
-		
-		Map<Character, Integer> values = new HashMap<Character, Integer>();
-		values.put('I',1);
-		values.put('V',5);
-		values.put('X',10);
-		values.put('L',50);
-		values.put('C',100);
-		values.put('D',500);
-		values.put('M',1000);
-		
-		String s = "IXX";
 		int result = 0;
-		int previousValue = 0;
 		
+		Map<Character, Integer> roman = new HashMap<Character, Integer>();
+		roman.put('I', 1);
+		roman.put('V', 5);
+		roman.put('X', 10);
+		roman.put('L', 50);
+		roman.put('C', 100);
+		roman.put('D', 500);
+		roman.put('M', 1000);
 		
-		for(int i=s.length()-1;i>=0;i--) {
-			char roman = s.charAt(i);
-			int currentValue = values.get(roman);
+		int previous = 0;
+		
+		for(int i=str.length()-1;i>=0;i--) {
+			int current = roman.get(str.charAt(i));
 			
-			if(currentValue >= previousValue) {
-				result +=currentValue;
+			if(current >= previous) {
+				result += current;
 			}else {
-				result-=currentValue;
+				result -= current;
 			}
-			previousValue = currentValue;
+			previous = current;
+			
 		}
-		
-		System.out.println(result);
+		return result;
+	}
+	
+	public static void main(String[] args) {
+		String str = "IXX";
+		int values = romanToInt(str);
+		System.out.println(values);
 	}
 
 }
