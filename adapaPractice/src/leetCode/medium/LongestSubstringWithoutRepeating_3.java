@@ -5,38 +5,38 @@ import java.util.Set;
 
 public class LongestSubstringWithoutRepeating_3 {
 
-	public static int subString(String s) {
+	public static String subString(String s) {
 
-		if (s == null || s.length() == 0) {
-			return 0;
-		}
-
+		int len = s.length();
+		int maxlen = 0;
+		int start = 0; int end = 0;
+		int i=0; int j = 0;
+		
 		Set<Character> seen = new HashSet<Character>();
-
-		int result = 1;
-		int right = 0;
-		int left = 0;
-
-		while (right < s.length()) {
-			if (seen.contains(s.charAt(right))) {
-				seen.remove(s.charAt(left));
-				left++;
-			} else {
-				seen.add(s.charAt(right));
-				int len = seen.size();
-				result = Math.max(len, right - left);
-				right++;
+		
+		while(i < len && j < len) {
+			if(!seen.contains(s.charAt(j))) {
+				seen.add(s.charAt(j++));
+				if(j - i > maxlen) {
+					maxlen = j-i;
+					start = i;
+					end = j;
+				}
+			}else {
+				seen.remove(s.charAt(i++));
 			}
 		}
-		return result;
+		return s.substring(start,end);
 	}
 
 	public static void main(String[] args) {
 
 		String str = "pwwkeaw";
 
-		int result = subString(str);
-		System.out.println(result);
+		String result = subString(str);
+		int len = result.length();
+		
+		System.out.println(result+", count: "+len);
 
 	}
 

@@ -6,7 +6,7 @@ public class MissingNumInArray {
 		int[] nums = {1,3,2,4,6,7};
 		int len = nums.length+1;
 		
-		int totalSum = len*(len+1)/2;
+		int totalSum = (len*(len+1))/2;
 		
 		int sum = 0;
 		
@@ -21,3 +21,7 @@ public class MissingNumInArray {
 	}
 
 }
+/*
+ * Refer this video for better understanding
+ * (https://www.youtube.com/watch?v=aaFrAFZATKU&t=342s&ab_channel=MathsSmart)
+ */

@@ -24,8 +24,8 @@ public class LongestCommonPrefix {
 	}
 	
 	public static void main(String[] args) {
-		String[] str = {"geeksforgeeks", "geeks", "geek",
-		         "geezer"};
+		String[] str = {"geeksforgeeks", "geaks", "geek",
+		         "gecker"};
 		String result = commonPrefix(str);
 		
 		System.out.println(result);
