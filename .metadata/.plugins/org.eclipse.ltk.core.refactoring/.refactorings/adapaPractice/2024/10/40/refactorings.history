@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;leetCode.easy.Node&apos; to &apos;Root&apos;&#x0D;&#x0A;- Original project: &apos;adapaPractice&apos;&#x0D;&#x0A;- Original element: &apos;leetCode.easy.Node&apos;&#x0D;&#x0A;- Renamed element: &apos;leetCode.easy.Root&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Node&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;leetCode.easy{Nary_Tree_Preorder_Traversal.java[Node" matchStrategy="1" name="Root" qualified="false" references="true" similarDeclarations="false" stamp="1728022700126" textual="false" version="1.0"/>
+</session>

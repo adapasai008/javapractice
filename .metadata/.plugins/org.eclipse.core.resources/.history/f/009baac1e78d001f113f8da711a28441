@@ -1,0 +1,16 @@
+package leetCode.easy;
+
+public class Non_decreasing_Array_665 {
+
+	public static boolean checkPossibility(int[] nums) {
+		
+	}
+	
+	public static void main(String[] args) {
+		int[] nums = {4,2,3};
+		boolean result = checkPossibility(nums);
+		
+		System.out.println(result);
+	}
+
+}

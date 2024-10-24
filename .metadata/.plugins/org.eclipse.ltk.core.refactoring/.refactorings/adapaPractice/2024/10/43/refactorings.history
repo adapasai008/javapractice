@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Non_decreasing_Array_665.java&apos; to &apos;adapaPractice/src/leetCode.medium&apos;&#x0D;&#x0A;- Original project: &apos;adapaPractice&apos;&#x0D;&#x0A;- Destination element: &apos;adapaPractice/src/leetCode.medium&apos;&#x0D;&#x0A;- Original element: &apos;leetCode.easy.Non_decreasing_Array_665.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;leetCode.medium" element1="/src&lt;leetCode.easy{Non_decreasing_Array_665.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1729396981191" units="1" version="1.0"/>
+</session>
