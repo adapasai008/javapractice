@@ -1,14 +1,40 @@
 package leetCode.easy;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Invert_Binary_Tree_226 {
 
-	public static void treeTraversal(TreeNode_1 root) {
+    public static TreeNode_1 invertTree(TreeNode_1 root) {
+    	if(root == null) {
+    		return null;
+    	}
+    	
+    	TreeNode_1 temp = root.Left;
+    	root.Left = root.Right;
+    	root.Right = temp;
+    	
+    	invertTree(root.Left);
+    	invertTree(root.Right);
+    	
+    	return root;
+        
+    }
+	
+	public static void levelOrderTraversal(TreeNode_1 root) {
 		if(root == null) {
 			return;
 		}
-		System.out.print(root.val + " ");
-		treeTraversal(root.Left);
-		treeTraversal(root.Right);
+		Queue<TreeNode_1> queue = new LinkedList<TreeNode_1>();
+		queue.add(root);
+		
+		while(!queue.isEmpty()) {
+			TreeNode_1 current = queue.poll();
+			System.out.print(current.val + " ");
+			
+			if(current.Left != null) queue.add(current.Left);
+			if(current.Right != null) queue.add(current.Right);
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -20,7 +46,13 @@ public class Invert_Binary_Tree_226 {
 		root.Right.Left = new TreeNode_1(6);
 		root.Right.Right = new TreeNode_1(9);
 		
-		treeTraversal(root);
+		levelOrderTraversal(root);
+		
+		TreeNode_1 invertRoot = invertTree(root);
+		
+		System.out.println();
+		
+		levelOrderTraversal(invertRoot);
 	}
 
 }
