@@ -18,6 +18,10 @@ class Employee {
 //		System.out.println("employee annual package "+empSalary);
 	}
 
+	public Employee() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getEmpId() {
 		return empId;
 	}
@@ -56,6 +60,7 @@ public class EmployeeDetails {
 
 	public static void main(String[] args) {
 
+		Employee Etest = new Employee();
 		Employee E1 = new Employee(101512031, "Sushil", "Kumar", 45000.58);
 		Employee E2 = new Employee(101512032, "Tara", "Sharma", 51000.99);
 		System.out.println("employee full name " + E1.getEmpFirstName() + " " + E1.getEmpSecondName());
