@@ -4,7 +4,7 @@ public class Dummy {
 
 	public static void main(String[] args) {
 
-		"Now final test to github"
+		"Now it's done "
 	}
 
 }
