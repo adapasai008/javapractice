@@ -2,7 +2,7 @@ package interview_prep_2026;
 
 import java.util.stream.IntStream;
 
-public class Possible_Sub_Palindrome_10 {
+public class Possible_Sub_Palindrome_11 {
 
 	public static void main(String[] args) {
 		String str = "adaaaba";
