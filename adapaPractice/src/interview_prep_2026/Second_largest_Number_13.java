@@ -13,6 +13,9 @@ public class Second_largest_Number_13 {
 		Optional<Integer> lnum = nums.stream().distinct().sorted(Comparator.reverseOrder()).skip(1).findFirst();
 
 		System.out.println(lnum.get());
+		
+//		int[] nums = {1,4,3,5,2}; //just use the boxed it will convert the int to integer
+//		Optional<Integer> result = Arrays.stream(nums).boxed().sorted(Comparator.reverseOrder()).skip(1).findFirst();
 
 	}
 
