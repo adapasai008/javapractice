@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class Occurrence_of_duplicate_3 {
+public class Occurrence_of_duplicate_03 {
 
 	public static void main(String[] args) {
 

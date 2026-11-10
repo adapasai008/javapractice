@@ -1,6 +1,6 @@
 package interview_prep_2026;
 
-public class Possible_Sequences_4 {
+public class Possible_Sequences_04 {
 
 	public static void permute(char[] chars, int index) {
 		if (index == chars.length) {
