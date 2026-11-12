@@ -28,6 +28,14 @@ public class EvenOdd_Num_Formatter_12 {
 		List<String> result = nums.stream().map(n -> n % 2 == 0 ? n + "e" : n + "o").collect(Collectors.toList());
 
 		System.out.println(result);
+		
+		/* solution for the array of nums */
+		int[] nums1 = {1,2,3,4,5};
+		
+		//Arrays.stream will returns the intstrem so mapToObj() → transforms an int into an object, such as a String.
+		List<String> result1 =  Arrays.stream(nums1).mapToObj(n -> n % 2 == 0 ? n+ "e": n+ "o").toList();
+		
+		System.out.println(result1);
 
 	}
 
