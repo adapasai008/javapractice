@@ -3,7 +3,7 @@ package interview_prep_2026;
 import java.util.Arrays;
 import java.util.List;
 
-public class Minimum_Number_14 {
+public class Min_Max_Number_14 {
 
 	public static void main(String[] args) {
 		
@@ -16,7 +16,10 @@ public class Minimum_Number_14 {
 		/* Best Solution */
 		Integer minNum = nums.stream().min(Integer::compareTo).orElseThrow();
 		
+		Integer maxNum = nums.stream().max(Integer::compareTo).orElseThrow();
+		
 		System.out.println(minNum);
+		System.out.println(maxNum);
 	}
 
 }
